@@ -1,0 +1,55 @@
+Git
+- version control system - takes snapshots of files called commits
+- snapshot of state of source code and files at any given time
+- tell git when to commit
+    - after implemented something, fixed a bug, some incremental change in code 
+    - commit code that compiles and runs properly  
+- commits can be "checked out" to go back to previous snapshots at any time 
+    - can see how code evolves over time - take snapshots fairly frequently in case you need to go back 
+- can merge changes to code 
+    - if multiple people make changes to a file, new changes overwrite old changes automatically
+        - commits - don't lose the history - can always go back if something breaks
+
+Github
+- bit bucket, gitlab, etc are repository hosting services
+- cloud hosting services 
+- store the whole history of the project in one location that's available to the whole team
+- storing code in the cloud 
+    - if something happens to the computer, you can clone your repo again
+    - reduce the risk of losing code
+    - allows for multiple people to work on one project and merge the changes together
+        - usually automatic and if not there are merge conflicts 
+
+Using Git
+- Git is your version control system 
+- CLI 
+    - git commit, etc
+- Graphical applications
+    - IntelliJ and VSCode
+    - Windows - TortiseGit integrates into file system 
+
+Using GitHub 
+- Git CLI 
+    - some git commands work on your "local" repository 
+    - others allow to interact with a remote repository on GitHub or elsewhere
+    - git pull and git push are git commands that perform operations on remote repositories 
+- Github.com 
+    - website has a vast array of tools to collaborate and manage coding projects 
+    - inspect code, copy commit history to local machine, review and comment code, etc 
+
+Basic Git Commands 
+- git status - gives status of repository 
+- git add - adds files to staging area, detect changes
+- git commit - takes anything in staging area, takes snapshot of stage of repository with added changes 
+- git push - takes committed changes and pushes them to remote repository (don't need to have a remote repository) 
+    - will merge with whatever branch you're pushing to
+    - should push to remote version of your branch - same branch 
+- git pull - takes whatever is in your remote branch and pulls it into your local branch
+
+Workflow
+- git workflow is an agreemnet between collaborators on how to interact with each other's git-controlled code 
+- pull requests, naming
+- no standard workflows but some good practice ones 
+- be consistent - is everyone following the same workflow?
+- gitflow is commonly used workflow
+    - gitflow tutorial
