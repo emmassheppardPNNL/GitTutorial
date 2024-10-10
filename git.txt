@@ -53,3 +53,16 @@ Workflow
 - be consistent - is everyone following the same workflow?
 - gitflow is commonly used workflow
     - gitflow tutorial
+
+can use git rm to unstage after git add 
+git add . will add everything in the directory to the staging area 
+flags -followed by one letter and --followed by the whole flag word
+    -m = --message
+git branch to get current branch
+
+get checkout -b <branch name> to create a local branch
+Branching
+- don't push to master branch - bad practice 
+- take a snapshot of whatever branch you're on - typically master 
+    - want to implement a new feature
+    - any changes won't have effect on master until they're merged to master 
